@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-
 selected=$(find ~/workspaces/personal ~/workspaces/Logistiview ~/workspaces/tecnotree/d-stack/*/ -mindepth 1 -maxdepth 1 -type d | fzf)
 if [[ -z $selected ]]; then
-    exit 0
+    return 1
 fi
 selected_name_base=$(basename "$selected")
 # selected_name_parent=$(basename -- $(dirname "$selected"))

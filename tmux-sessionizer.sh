@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-selected=$(find ~/workspaces/personal ~/workspaces/Logistiview ~/workspaces/tecnotree/d-stack/*/ -mindepth 1 -maxdepth 1 -type d | fzf)
+selected=$(find ~/workspaces/personal ~/workspaces/Logistiview ~/workspaces/tecnotree/d-stack/*/ -not -path '*/.*' -mindepth 1 -maxdepth 1 -type d | fzf)
 if [[ -z $selected ]]; then
     return 1
 fi

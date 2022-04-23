@@ -1,0 +1,14 @@
+[custom0]
+binding='<Primary><Super>x'
+command='nmcli c up tt'
+name='connect tt vpn'
+
+[custom1]
+binding='<Primary><Super>c'
+command='nmcli c up Hotspot'
+name='Hotspot'
+
+[custom2]
+binding='<Primary><Super>z'
+command='nmcli c up ssl'
+name='connect to sslvpn'

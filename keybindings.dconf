@@ -1,0 +1,6 @@
+[/]
+activate-window-menu=@as []
+cycle-group=['<Alt>F2']
+cycle-group-backward=['<Shift><Alt>F2']
+panel-main-menu=@as []
+panel-run-dialog=['<Super>r']
